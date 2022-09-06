@@ -81,6 +81,10 @@ const swiper_home = new Swiper('.home-swiper', {
     invert: true,
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 5
+    },
     // when window width is <= 480px
     425: {
       slidesPerView: 1,
