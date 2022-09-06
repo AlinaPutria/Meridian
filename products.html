@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meridian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="maskL">
+        <div class="loader center">
+            <span class="loader-span"></span>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-store">
+                <p class="header-store-p">spring seaSon sale | 20% off entire store | Free Premium UK Delivery</p>
+            </div>
+            <div class="header-navigation">
+                <nav class="header-navigation-list">
+                    <ul class="header-navigation-list-ul">
+                        <li class="header-navigation-list-ul-li"><a href="./index.html"
+                                class="header-navigation-list-ul-link">Home</a></li>
+                        <li class="header-navigation-list-ul-li"><a href="./products.html"
+                                class="header-navigation-list-ul-link active">Products</a></li>
+                        <li class="header-navigation-list-ul-li"><a href=""
+                                class="header-navigation-list-ul-link">Showroom</a></li>
+                        <li class="header-navigation-list-ul-li"><a href="./about.html"
+                                class="header-navigation-list-ul-link">About
+                                Us</a></li>
+                        <li class="header-navigation-list-ul-li"><a href="./contact.html"
+                                class="header-navigation-list-ul-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="burger">
+                    <div class="burger-burger">
+                        <span class="rect"></span>
+                    </div>
+                    <nav class="burger-navigation-list">
+                        <ul class="burger-navigation-list-ul">
+                            <li class="burger-navigation-list-ul-li"><a href="./index.html"
+                                    class="burger-navigation-list-ul-link">Home</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href="./products.html"
+                                    class="burger-navigation-list-ul-link">Products</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href=""
+                                    class="burger-navigation-list-ul-link">Showroom</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href="./about.html"
+                                    class="burger-navigation-list-ul-link">About Us</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href="./contact.html"
+                                    class="burger-navigation-list-ul-link">Contact</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href=""
+                                    class="burger-navigation-list-ul-link">Dealer Login</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href=""
+                                    class="burger-navigation-list-ul-link">Become A Dealer</a></li>
+                            <li class="burger-navigation-list-ul-li"><a href=""
+                                    class="burger-navigation-list-ul-link">Find
+                                    A Retail</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <img class="logo-img" src="./img/logo.png" alt="">
+                </div>
+                <nav class="header-navigation-list">
+                    <ul class="header-navigation-list-ul">
+                        <li class="header-navigation-list-ul-li"><a href=""
+                                class="header-navigation-list-ul-link">Dealer Login</a></li>
+                        <li class="header-navigation-list-ul-li"><a href=""
+                                class="header-navigation-list-ul-link">Become A Dealer</a></li>
+                        <li class="header-navigation-list-ul-li"><a href="" class="header-navigation-list-ul-link">Find
+                                A Retail</a></li>
+                    </ul>
+                </nav>
+                <div class="icon-links">
+                    <a href="" class="icon-links-link"><img class="icon-links-link-img" src="./img/Cart.png" alt=""></a>
+                    <a href="" class="icon-links-link"><img class="icon-links-link-img" src="./img/Search.png"
+                            alt=""></a>
+                </div>
+            </div>
+            <div class="header-article__products">
+                <div class="header-article-text__products">
+                    <h1 class="header-article-text-h1 animation">Two Day Sale - Up To 40% Off</h1>
+                    <div id="timer" class="timer animation">
+                        <span id="days" class="timer-span"></span>
+                        <span id="hours" class="timer-span"></span>
+                        <span id="minutes" class="timer-span"></span>
+                        <span id="seconds" class="timer-span"></span>
+                    </div>
+                    <p class="header-article-text-p animation">Ending Soon!</p>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="section-products">
+                <div class="section-products-sort">
+                    <h2>Collection</h2>
+                    <div class="section-products-sort-sorting">
+                        <h5 class="section-products-sort-sorting-h5">Sort by</h5>
+                        <div class="section-products-sort-sorting-btns">
+                            <button class="section-products-sort-sorting-btn" id="sort-recent">Most recent</button>
+                            <button class="section-products-sort-sorting-btn" id="sort-asc">Price</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-products-filter">
+                    <div class="filter">
+                        <div class="filter-first accordion container-accordion flow">
+                            <h3 class="filter-h3">Category</h3>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1">New Arrivals</h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1">Living Room</h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1"> Kitchen & Dining Rooms</h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1"> Bedrooms
+                                </h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1"> Accents
+                                </h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1"> Occasional Tables</h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1"> Office/Home Office</h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion__item">
+                                <h4 id="accordion__trigger-1" class="accordion__item--trigger" aria-expanded="false"
+                                    aria-controls="accordion__panel-1"> Outdoor Furniture</h4>
+                                <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                    aria-labelledby="accordion__trigger-1">
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="sofas" id="">
+                                        <label class="item-label" for="sofas">Sofas (20)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="seats" id="">
+                                        <label class="item-label" for="seats">Love Seats (10)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="chairs" id="">
+                                        <label class="item-label" for="chairs">Chairs (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Sectionals" id="">
+                                        <label class="item-label" for="Sectionals">Sectionals (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Ottomans" id="">
+                                        <label class="item-label" for="Ottomans">Ottomans (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Chaise-Lounges" id="">
+                                        <label class="item-label" for="Chaise-Lounges">Chaise Lounges (15)</label>
+                                    </div>
+                                    <div class="item">
+                                        <input class="item-input" type="checkbox" name="Collections" id="">
+                                        <label class="item-label" for="Collections">Collections (15)</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-second accordion__item">
+                            <h3 id="accordion__trigger-1" class="filter-h3 accordion__item--trigger"
+                                aria-expanded="false" aria-controls="accordion__panel-1">Featured</h3>
+                            <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                aria-labelledby="accordion__trigger-1">
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="Spring" id="">
+                                    <label class="item-label" for="Spring">Spring</label>
+                                </div>
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="Sale" id="">
+                                    <label class="item-label" for="Sale">Sale</label>
+                                </div>
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="New-Arrival" id="">
+                                    <label class="item-label" for="New-Arrival">New Arrival</label>
+                                </div>
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="Clearance" id="">
+                                    <label class="item-label" for="Clearance">Clearance</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-third accordion__item">
+                            <h3 id="accordion__trigger-1" class="filter-h3 accordion__item--trigger"
+                                aria-expanded="false" aria-controls="accordion__panel-1">Price</h3>
+                            <div id="accordion__panel-1" class="accordion__item--panel" role="region"
+                                aria-labelledby="accordion__trigger-1">
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="100" id="">
+                                    <label class="item-label" for="100">£100-500</label>
+                                </div>
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="500" id="">
+                                    <label class="item-label" for="500">£500-1000</label>
+                                </div>
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="1000" id="">
+                                    <label class="item-label" for="1000">£1000-3000</label>
+                                </div>
+                                <div class="item">
+                                    <input class="item-input" type="checkbox" name="3000" id="">
+                                    <label class="item-label" for="3000">£3000-5000</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-product-items">
+                        <div class="load-block" id="paginated-list" data-current-page="1" aria-live="polite">
+                            <a href="" data-price="1000" data-rating="6" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image1.png" alt="">
+                                <h5 class="section-products-items-item-h5">Serene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£1,000.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="800" data-rating="1" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image2.png" alt="">
+                                <h5 class="section-products-items-item-h5">Hilton Boucle Fabric Chaise Lounge</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£800.00</p>
+                                    <span class="section-products-items-item-span">£2,000.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="600" data-rating="2" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image3.png" alt="">
+                                <h5 class="section-products-items-item-h5">Marquis Velvet Sofa</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£600.00</p>
+                                    <span class="section-products-items-item-span">£1,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="7" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image4.png" alt="">
+                                <h5 class="section-products-items-item-h5">Siam SSerene Linen Deluxe Cloud </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£1,200.00</p>
+                                    <span class="section-products-items-item-span">£3,000.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="520" data-rating="3" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image5.png" alt="">
+                                <h5 class="section-products-items-item-h5">SiaSerene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£520.00</p>
+                                    <span class="section-products-items-item-span">£1,300.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="9" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image6.png" alt="">
+                                <h5 class="section-products-items-item-h5">Serene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="10" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image7.png" alt="">
+                                <h5 class="section-products-items-item-h5">Serene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="4" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image8.png" alt="">
+                                <h5 class="section-products-items-item-h5">Alina Velvet Modular Sofa</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="8" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image9.png" alt="">
+                                <h5 class="section-products-items-item-h5">Plush Velvet Standard Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="5" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image10.png" alt="">
+                                <h5 class="section-products-items-item-h5">Marlon Velvet SofaSet 1 </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="6" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image11.png" alt="">
+                                <h5 class="section-products-items-item-h5">Plush Velvet Standard Cloud </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image12.png" alt="">
+                                <h5 class="section-products-items-item-h5">Plush Velvet Standard Cloud </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image1.png" alt="">
+                                <h5 class="section-products-items-item-h5">Serene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image2.png" alt="">
+                                <h5 class="section-products-items-item-h5">Hilton Boucle Fabric Chaise Lounge</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image3.png" alt="">
+                                <h5 class="section-products-items-item-h5">Marquis Velvet Sofa</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image4.png" alt="">
+                                <h5 class="section-products-items-item-h5">Siam SSerene Linen Deluxe Cloud </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image5.png" alt="">
+                                <h5 class="section-products-items-item-h5">SiaSerene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image6.png" alt="">
+                                <h5 class="section-products-items-item-h5">Serene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image7.png" alt="">
+                                <h5 class="section-products-items-item-h5">Serene Linen Deluxe Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image8.png" alt="">
+                                <h5 class="section-products-items-item-h5">Alina Velvet Modular Sofa</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image9.png" alt="">
+                                <h5 class="section-products-items-item-h5">Plush Velvet Standard Cloud</h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image10.png" alt="">
+                                <h5 class="section-products-items-item-h5">Marlon Velvet SofaSet 1 </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image11.png" alt="">
+                                <h5 class="section-products-items-item-h5">Plush Velvet Standard Cloud </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                            <a href="" data-price="1200" data-rating="11" class="section-products-items-item">
+                                <img class="section-products-items-item-img" src="./img/products/image12.png" alt="">
+                                <h5 class="section-products-items-item-h5">Plush Velvet Standard Cloud </h5>
+                                <div class="section-products-items-item-price">
+                                    <p class="section-products-items-item-p">£2,500.00</p>
+                                    <span class="section-products-items-item-span">£2,500.00</span>
+                                    <p class="section-products-items-item-p">40% Off</p>
+                                </div>
+                            </a>
+                        </div>
+                        <nav class="pagination-container">
+                            <button class="pagination-button" id="prev-button" aria-label="Previous page"
+                                title="Previous page">
+                                &lt;
+                            </button>
+                            <div id="pagination-numbers">
+                            </div>
+                            <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
+                                &gt;
+                            </button>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <section class="section-consultation scroll-element js-scroll fade-in">
+                <div class="section-consultation-text">
+                    <div class="section-consultation-text-support">
+                        <h2 class="section-consultation-text-support-h2">How Can We Help You?</h2>
+                        <p class="section-consultation-text-support-p">We pride ourselves on superior customer service.
+                            Speak to a member of our sales team to help with your order. </p>
+                        <div class="section-consultation-text-support-text">
+                            <p class="section-consultation-text-support-text-p">Get In Touch</p>
+                            <a href="#" class="section-consultation-text-support-text-email">support@Meridian.com</a>
+                        </div>
+                    </div>
+                    <div class="section-consultation-text-call">
+                        <a href="#" class="section-consultation-text-call-tel">
+                            <img src="./img/tel-black.png" alt="" class="section-consultation-text-call-img">
+                            01789 339533
+                        </a>
+                        <p class="section-consultation-text-call-p">8am to 6pm, 7 days a week</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="footer-top-logo">
+                    <img src="./img/logo-footer.png" alt="">
+                </div>
+                <div class="footer-top-links">
+                    <div class="footer-top-links-item">
+                        <h3 class="footer-top-links-item-h3">Head Office</h3>
+                        <p class="footer-top-links-item-p">32 Plum St, Trenton, NJ 08638, United States</p>
+                        <div class="footer-top-links-item-links">
+                            <a class="footer-top-links-item-links-link" href="#" class="">
+                                <img class="footer-top-links-item-links-img" src="./img/tel.png" alt="" class="">
+                                01789 339533
+                            </a>
+                            <a class="footer-top-links-item-links-link" href="#" class="">
+                                <img class="footer-top-links-item-links-img" src="./img/mail.png" alt="" class="">
+                                support@Meridian.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-top-links-item">
+                        <h3 class="footer-top-links-item-h3">Product</h3>
+                        <ul class="footer-top-links-item-ul">
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">New Arrival</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Living Room</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Kitchen & Dining Room</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Bed Room</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Accent</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Occasional Table</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Office/Home Office</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="#" class="footer-top-links-item-link">Outdoor Furniture</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top-links-item">
+                        <h3 class="footer-top-links-item-h3">Help</h3>
+                        <ul class="footer-top-links-item-ul">
+                            <li class="footer-top-links-item-li">
+                                <a href="./about.html" class="footer-top-links-item-link">About Us</a>
+                            </li>
+                            <li class="footer-top-links-item-li">
+                                <a href="./contact.html" class="footer-top-links-item-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-top-links-item">
+                        <h3 class="footer-top-links-item-h3">Head Office</h3>
+                        <form action="" class="footer-top-links-item-form">
+                            <input class="footer-top-links-item-form-input" type="email" placeholder="Email address">
+                            <button class="footer-top-links-item-form-btn" type="submit">
+                                <img src="./img/arrow.png" class="footer-top-links-item-form-btn-img" alt="">
+                            </button>
+                        </form>
+                        <p class="footer-top-links-item-form-p">Our newsletter is packed full of style ideas, new
+                            products and exclusive disounts. We are
+                            GDPR compliant, your information is secure with us.</p>
+                    </div>
+                </div>
+                <div class="footer-top-policy">
+                    <div class="footer-top-policy-text">
+                        <p class="footer-top-policy-p">Terms & Conditions</p>
+                        <p class="footer-top-policy-p">Privacy Policy</p>
+                        <p class="footer-top-policy-p">Shipping Policy</p>
+                    </div>
+                    <div class="footer-top-policy-links">
+                        <a class="footer-top-policy-links-link" href="#">
+                            <img class="footer-top-policy-links-link-img" src="./img/f.png" alt="">
+                        </a>
+                        <a class="footer-top-policy-links-link" href="#">
+                            <img class="footer-top-policy-links-link-img" src="./img/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-top-card">
+                    <a href="#" class="footer-top-card-link">
+                        <img class="footer-top-card-img" src="./img/mastercard.png" alt="">
+                    </a>
+                    <a href="#" class="footer-top-card-link">
+                        <img class="footer-top-card-img" src="./img/visa.png" alt="">
+                    </a>
+                    <a href="#" class="footer-top-card-link">
+                        <img class="footer-top-card-img" src="./img/google-pay.png" alt="">
+                    </a>
+                    <a href="#" class="footer-top-card-link">
+                        <img class="footer-top-card-img" src="./img/apple-one.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-bottom-p" id="copyright"></p>
+                <button class="footer-bottom-button" onclick="topFunction()" id="myBtn" title="Go to top">GO TO
+                    TOP</button>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinysort/3.2.5/tinysort.min.js"
+        integrity="sha512-P3lisBxY1PusizpelihVrBeciBfWA9r7Ff/8j16b4K399OWJIrY1UdzdE7/BctqKv6Xujr8hp3IA2XiQX3Bsew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
