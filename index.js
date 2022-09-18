@@ -65,7 +65,7 @@ function toggleNav() {
 // // ....................
 // SLIDER
 const swiper_home = new Swiper('.home-swiper', {
-  speed: 1000,
+  speed: 2000,
   slidesPerView: 4,
   loop: true,
   spaceBetween: 25,
@@ -98,7 +98,7 @@ const swiper_home = new Swiper('.home-swiper', {
   }
 });
 const swiper_home_second = new Swiper('.home-second-swiper', {
-  speed: 1000,
+  speed: 2000,
   slidesPerView: 1,
   loop: true,
   spaceBetween: 25,
